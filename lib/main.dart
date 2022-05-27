@@ -9,7 +9,17 @@ void main() {
       home: Scaffold(
         appBar: AppBar(
           title: const Text('I am Rich'),
-          backgroundColor: Colors.amber,
+          backgroundColor: Colors.blueGrey.shade900,
+        ),
+        backgroundColor: Colors.blue.shade50,
+        body: const Padding(
+          padding: EdgeInsets.all(20.0),
+          child: Center(
+            child: Image(
+              image: NetworkImage(
+                  'https://media.istockphoto.com/photos/hot-air-balloons-flying-over-the-botan-canyon-in-turkey-picture-id1297349747'),
+            ),
+          ),
         ),
       ),
     ),
