@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 // Read It : https://api.flutter.dev/flutter/material/Scaffold-class.html
 
 void main() {
+  String networkUrl =
+      'https://media.istockphoto.com/photos/hot-air-balloons-flying-over-the-botan-canyon-in-turkey-picture-id1297349747';
   runApp(
     MaterialApp(
       home: Scaffold(
@@ -16,8 +18,7 @@ void main() {
           padding: EdgeInsets.all(20.0),
           child: Center(
             child: Image(
-              image: NetworkImage(
-                  'https://media.istockphoto.com/photos/hot-air-balloons-flying-over-the-botan-canyon-in-turkey-picture-id1297349747'),
+              image: AssetImage('images/paris_arc.webp'),
             ),
           ),
         ),
